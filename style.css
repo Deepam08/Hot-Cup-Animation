@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #607b8b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  position: relative;
+  top: 70px;
+  left: 2%;
+  width: 408px;
+  height: 460px;
+}
+.top {
+  height: 96px;
+  width: 100%;
+  background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+  border-radius: 50%;
+  position: absolute;
+  top: -48px;
+}
+.cup {
+  position: absolute;
+  width: 330px;
+  height: 379px;
+  background: linear-gradient(to right, #f9f9f9, #d9d9d9);
+  border-bottom-left-radius: 142px;
+  border-bottom-right-radius: 142px;
+  top: 10%;
+  position: absolute;
+  border: 1px solid #e7e7e7;
+}
+.circle {
+  height: 81px;
+  width: 310px;
+  background: linear-gradient(to left, #f9f9f9, #d9d9d9);
+
+  position: absolute;
+  top: 10%;
+  left: 3%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.tea {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#934529, #ea6a3c);
+  border-radius: 50%;
+  position: absolute;
+  top: 41%;
+}
+.handel {
+  position: absolute;
+  border: 28px solid #d9d9d9;
+  height: 252px;
+  width: 208px;
+  right: -24px;
+  top: 15%;
+  border-radius: 50%;
+  border-left: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  transform: rotate(39deg);
+}
+.plate {
+  position: absolute;
+  height: 237px;
+  width: 542px;
+  bottom: 0;
+  top: 53%;
+  right: -6%;
+  border-radius: 50%;
+  background: linear-gradient(to right, #f9f9f9, #e7e7e7);
+  z-index: -1;
+  box-shadow: 0 35px 35px rgb(0, 0, 0, 0.2);
+  border: 18px solid #d9d9d9;
+}
+
+.vapour span {
+  position: relative;
+  bottom: 50px;
+  display: inline-block;
+  margin: 0 2px 50px;
+  width: 8px;
+  height: 120px;
+  background-color: #fff;
+  animation: animate 5s linear infinite;
+  opacity: 0;
+  filter: blur(8px);
+  animation-delay: calc(var(--i) * 0.5s);
+  left: 7.5%;
+}
+@keyframes animate { 
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-150px) scalex(5);
+  }
+  100% {
+    transform: translateY(-300px) scaleX(10);
+  }
+} 
+/* Code for vapour 2 */
+/* .vapour span{
+  position: relative;
+    display: inline-block;
+    width: 9px;
+    height: 77px;
+    top: -41px;
+    background-color: #fff;
+    left: 3%;
+    animation: animated 5s linear infinite;
+    animation-delay: calc(var(--i) * 0.5s);
+    filter: blur(8px);
+    opacity: 0;
+    
+} */
+
+/* @keyframes animated {
+  0% {
+    transform: translateY() scale(1);
+  }
+  15%{
+    opacity: 1;
+  }
+  50%{
+    transform: translateY(-150px) scalex(5);
+  }
+  100%{
+    transform: translateY(-300px) scalex(10);
+  }
+  
+}  */
